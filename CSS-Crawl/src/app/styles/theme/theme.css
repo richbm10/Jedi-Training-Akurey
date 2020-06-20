@@ -1,0 +1,23 @@
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button {
+    color: #ffffff;
+    background-color: #d89191;
+    border: 1px solid #d89191;
+}
+
+.button:hover {
+    background-color: #e0b0b0;
+    border: 1px solid #e0b0b0;
+}
+
+.contract-service h1 {
+    color: #d89191;
+}
+
+.contract-service span {
+    font-weight: bold;
+}
