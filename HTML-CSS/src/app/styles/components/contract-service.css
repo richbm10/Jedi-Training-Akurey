@@ -25,7 +25,9 @@
 .contract-service .button {
     font-size: 0.70rem;
     grid-area: 3/2/4/3;
-    margin: 1%;
+    justify-self: center;
+    align-self: center;
+    place-self: center stretch;
 }
 
 .contract-service span {
@@ -34,12 +36,24 @@
     align-self: center;
 }
 
-@media only screen and (min-device-width: 768px) {
-    .contract-service {
-        grid-template-columns: 40vw 40vw;
-        grid-template-rows: 4vh 20vh 4vh;
-    }
+@media only screen and (min-device-width: 360px) {
     .contract-service p {
         font-size: 0.70rem;
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+    .contract-service {
+        grid-template-columns: 14vw 14vw;
+        grid-template-rows: 4vh 12vh 4vh;
+    }
+    .contract-service p {
+        font-size: 0.60rem;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) {
+    .contract-service p {
+        font-size: 0.68rem;
     }
 }
