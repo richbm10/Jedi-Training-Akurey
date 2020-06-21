@@ -1,7 +1,13 @@
-.row-container-center {
+.container-center {
     display: flex;
     align-items: center;
     align-content: flex-start;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: flex-start;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .container-center {
+        flex-flow: row wrap;
+    }
 }

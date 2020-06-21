@@ -1,7 +1,7 @@
 .contract-service {
     display: grid;
-    grid-template-columns: 14vw 14vw;
-    grid-template-rows: 4vh 12vh 4vh;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 4vh 20vh 4vh;
     justify-items: stretch;
     align-items: stretch;
     margin: 1%;
@@ -13,7 +13,7 @@
 }
 
 .contract-service p {
-    font-size: 0.70rem;
+    font-size: 0.60rem;
     grid-area: 2/2/3/3;
     margin-left: 5%;
 }
@@ -32,4 +32,14 @@
     font-size: 0.70rem;
     grid-area: 3/1/4/2;
     align-self: center;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .contract-service {
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 4vh 20vh 4vh;
+    }
+    .contract-service p {
+        font-size: 0.70rem;
+    }
 }
