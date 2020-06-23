@@ -3,6 +3,10 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+ul {
+    background-color: #D3D3D3;
+}
+
 .button {
     color: #ffffff;
     background-color: #d89191;

@@ -16,6 +16,8 @@
     font-size: 0.60rem;
     grid-area: 2/2/3/3;
     margin-left: 5%;
+    line-height: 0.60rem;
+    overflow: auto;
 }
 
 .contract-service img {
@@ -39,21 +41,43 @@
 @media only screen and (min-device-width: 360px) {
     .contract-service p {
         font-size: 0.70rem;
+        line-height: 0.75rem;
     }
 }
 
-@media only screen and (min-device-width: 768px) {
-    .contract-service {
-        grid-template-columns: 14vw 14vw;
-        grid-template-rows: 4vh 12vh 4vh;
+@media only screen and (min-device-width: 450px) and (max-device-width: 768px) {
+    .contract-service h1 {
+        font-size: 1.20rem;
+    }
+    .contract-service .button,
+    .contract-service span {
+        font-size: 1.15rem;
     }
     .contract-service p {
-        font-size: 0.60rem;
+        font-size: 1.00rem;
+        line-height: 1.25rem;
+    }
+}
+
+@media only screen and (min-device-width: 769px) {
+    .contract-service {
+        grid-template-columns: fit-content(175px) fit-content(175px);
     }
 }
 
 @media only screen and (min-device-width: 1024px) {
+    .contract-service {
+        grid-template-rows: 2vh 10vh 2vh;
+    }
+    .contract-service h1 {
+        font-size: 0.75rem;
+    }
+    .contract-service .button,
+    .contract-service span {
+        font-size: 0.70rem;
+    }
     .contract-service p {
-        font-size: 0.68rem;
+        font-size: 0.55rem;
+        line-height: 0.75rem;
     }
 }
