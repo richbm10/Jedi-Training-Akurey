@@ -7,6 +7,11 @@
     margin: 1%;
 }
 
+#contract-service-canvas {
+    width: 100%;
+    padding: 1% 0;
+}
+
 .contract-service h1 {
     font-size: 0.75rem;
     grid-area: 1/1/2/3;
@@ -59,13 +64,19 @@
     }
 }
 
-@media only screen and (min-device-width: 769px) {
+@media only screen and (min-device-width: 768px) {
     .contract-service {
         grid-template-columns: fit-content(175px) fit-content(175px);
+    }
+    #contract-service-canvas {
+        max-width: 1280px;
     }
 }
 
 @media only screen and (min-device-width: 1024px) {
+    #contract-service-canvas {
+        flex-flow: row wrap;
+    }
     .contract-service {
         grid-template-rows: 2vh 10vh 2vh;
     }
