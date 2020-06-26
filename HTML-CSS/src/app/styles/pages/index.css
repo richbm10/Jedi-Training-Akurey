@@ -1,0 +1,12 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 90vw 1fr;
+}
+
+main {
+    padding: 5vh 0;
+    grid-area: 1/2/2/3;
+    align-content: flex-start;
+    justify-content: center;
+}
