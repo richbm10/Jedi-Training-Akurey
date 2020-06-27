@@ -1,7 +1,18 @@
-.container-center {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
+.grid-container-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+@media only screen and (min-width: 768px) {
+    .grid-container-center {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .grid-container-center {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

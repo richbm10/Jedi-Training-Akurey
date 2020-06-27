@@ -7,6 +7,4 @@ body {
 main {
     padding: 5vh 0;
     grid-area: 1/2/2/3;
-    align-content: flex-start;
-    justify-content: center;
 }
