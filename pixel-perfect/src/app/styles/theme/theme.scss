@@ -1,15 +1,16 @@
 html {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-ul {
-    background-color: #D3D3D3;
-}
-
+header,
+footer,
 .button {
     color: #ffffff;
     background-color: #000000;
+}
+
+.button {
     border: 1px solid #000000;
 }
 
@@ -17,11 +18,6 @@ ul {
     background-color: #9c9c9c;
     border: 1px solid #9c9c9c;
 }
-
-
-/* .contract-service h1 {
-    color: #d89191;
-} */
 
 .contract-service span {
     font-weight: bold;

@@ -6,7 +6,7 @@ var concat = require('gulp-concat');
 var uglifycss = require('gulp-uglifycss');
 
 function sassTask() {
-    return src('src/app/styles/**/*.scss')
+    return src('src/app/styles/pages/index.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(uglifycss({
             "uglyComments": true,
@@ -26,7 +26,7 @@ function assetsTask() {
 }
 
 function watchTask() {
-    watch(['*.scss'], { interval: 1000 }, series(sassTask, assetsTask, htmlTask));
+    watch(['*.html', '*.scss'], { interval: 1000 }, series(sassTask, assetsTask, htmlTask));
 }
 
 exports.default = series(sassTask, assetsTask, htmlTask, watchTask);

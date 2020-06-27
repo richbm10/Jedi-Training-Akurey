@@ -7,11 +7,6 @@
     margin: 1%;
 }
 
-#contract-service-canvas {
-    width: 100%;
-    padding: 1% 0;
-}
-
 .contract-service h2 {
     font-size: 0.75rem;
     grid-area: 1/1/2/3;
@@ -58,6 +53,11 @@
 .contract-service .button,
 .contract-service span {
     font-size: 0.70rem;
+}
+
+#contract-service-canvas {
+    width: 100%;
+    padding: 5% 0;
 }
 
 @media only screen and (min-width: 360px) {

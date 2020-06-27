@@ -5,56 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/resets.css">
-    <link rel="stylesheet" href="../styles/globals/global.css">
-    <link rel="stylesheet" href="../styles/theme/theme.css">
-    <link rel="stylesheet" href="../styles/pages/index.css">
-    <link rel="stylesheet" href="../styles/components/button.css">
-    <link rel="stylesheet" href="../styles/components/contract-service.css">
+    <link rel="stylesheet" href="./main.css">
     <title>CSS Crawl</title>
 </head>
 
 <body>
-    <main class="flex-container-center">
-        <ul id="contract-service-canvas" class="grid-container-center">
-            <li class="contract-service">
-                <h2>Chuck Norris Bodyguards</h2>
-                <img src="https://via.placeholder.com/175">
-                <p>
-                    Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
-                </p>
-                <span>Desde: $15/12 horas</span>
-                <div class="button">Contratar</div>
-            </li>
-            <li class="contract-service">
-                <h2>Chuck Norris Bodyguards</h2>
-                <img src="https://via.placeholder.com/175">
-                <p>
-                    Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
-                </p>
-                <span>Desde: $15/12 horas</span>
-                <div class="button">Contratar</div>
-            </li>
-            <li class="contract-service">
-                <h2>Chuck Norris Bodyguards</h2>
-                <img src="https://via.placeholder.com/175">
-                <p>
-                    Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
-                </p>
-                <span>Desde: $15/12 horas</span>
-                <div class="button">Contratar</div>
-            </li>
-            <li class="contract-service">
-                <h2>Chuck Norris Bodyguards</h2>
-                <img src="https://via.placeholder.com/175">
-                <p>
-                    Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
-                </p>
-                <span>Desde: $15/12 horas</span>
-                <div class="button">Contratar</div>
-            </li>
-        </ul>
-    </main>
+    <header class="flex-container-row-A">
+        <img id="logo" src="./assets/images/logo.png" />
+
+        <object id="menu-button" type="image/svg+xml" data="./assets/icons/Menu-button.svg"></object>
+    </header>
+    <div id="content">
+        <main class="flex-container-col-A">
+            <ul id="contract-service-canvas" class="grid-container-center">
+                <li class="contract-service">
+                    <h2>Chuck Norris Bodyguards</h2>
+                    <img src="https://via.placeholder.com/175">
+                    <p>
+                        Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
+                    </p>
+                    <span>Desde: $15/12 horas</span>
+                    <div class="button">Contratar</div>
+                </li>
+                <li class="contract-service">
+                    <h2>Chuck Norris Bodyguards</h2>
+                    <img src="https://via.placeholder.com/175">
+                    <p>
+                        Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
+                    </p>
+                    <span>Desde: $15/12 horas</span>
+                    <div class="button">Contratar</div>
+                </li>
+                <li class="contract-service">
+                    <h2>Chuck Norris Bodyguards</h2>
+                    <img src="https://via.placeholder.com/175">
+                    <p>
+                        Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
+                    </p>
+                    <span>Desde: $15/12 horas</span>
+                    <div class="button">Contratar</div>
+                </li>
+                <li class="contract-service">
+                    <h2>Chuck Norris Bodyguards</h2>
+                    <img src="https://via.placeholder.com/175">
+                    <p>
+                        Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
+                    </p>
+                    <span>Desde: $15/12 horas</span>
+                    <div class="button">Contratar</div>
+                </li>
+            </ul>
+        </main>
+
+        <footer class="flex-container-col-B">
+            <span>Desarrollado por Akurey.com <br /> Todos los derechos reservados.</span>
+            <span><a><u>Términos y Condiciones</u></a></span>
+        </footer>
+    </div>
 </body>
 
 </html>

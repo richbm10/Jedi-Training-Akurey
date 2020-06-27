@@ -8,12 +8,28 @@
     row-gap: 1%;
 }
 
-.flex-container-center {
+.flex-container-col-B {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.flex-container-col-A {
     display: flex;
     align-items: center;
     align-content: center;
     flex-flow: column nowrap;
     justify-content: flex-start;
+}
+
+.flex-container-row-A {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 @media only screen and (min-width: 768px) {
