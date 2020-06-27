@@ -1,0 +1,27 @@
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    background-color: #D3D3D3;
+}
+
+.button {
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+
+.button:hover {
+    background-color: #9c9c9c;
+    border: 1px solid #9c9c9c;
+}
+
+.cs-canvas__contract-service span {
+    font-weight: bold;
+}
+
+.cs-canvas__contract-service h2::after {
+    background: #9c9c9c;
+}
