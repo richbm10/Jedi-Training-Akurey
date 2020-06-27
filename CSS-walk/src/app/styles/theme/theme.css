@@ -9,19 +9,24 @@ ul {
 
 .button {
     color: #ffffff;
-    background-color: #d89191;
-    border: 1px solid #d89191;
+    background-color: #000000;
+    border: 1px solid #000000;
 }
 
 .button:hover {
-    background-color: #e0b0b0;
-    border: 1px solid #e0b0b0;
+    background-color: #9c9c9c;
+    border: 1px solid #9c9c9c;
 }
 
-.contract-service h1 {
+
+/* .contract-service h1 {
     color: #d89191;
-}
+} */
 
 .contract-service span {
     font-weight: bold;
+}
+
+.contract-service h2::after {
+    background: #9c9c9c;
 }
