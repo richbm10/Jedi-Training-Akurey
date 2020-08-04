@@ -4,6 +4,8 @@ const { src, series, parallel, dest, watch } = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglifycss = require('gulp-uglifycss');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
 
 function sassTask() {
     return src('src/app/styles/pages/index.scss')
@@ -12,6 +14,7 @@ function sassTask() {
             "uglyComments": true,
         }))
         .pipe(concat('main.css'))
+        .pipe(postcss([autoprefixer()]))
         .pipe(gulp.dest('dist'));
 }
 
