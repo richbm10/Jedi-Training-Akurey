@@ -1,11 +1,13 @@
-.grid-container-center {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
+%center-container {
+    display: flex;
     align-items: center;
-    row-gap: 1%;
+    align-content: center;
+}
+
+.flex-container-col-A {
+    @extend %center-container;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
 }
 
 .flex-container-col-B {
@@ -13,33 +15,21 @@
     align-items: flex-start;
     align-content: flex-start;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
-}
-
-.flex-container-col-A {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 .flex-container-row-A {
-    display: flex;
-    align-items: center;
-    align-content: center;
+    @extend %center-container;
     flex-flow: row nowrap;
     justify-content: space-between;
 }
 
-@media only screen and (min-width: 768px) {
-    .grid-container-center {
-        grid-template-columns: 1fr 1fr;
-    }
+.flex-container-row-B {
+    @extend %center-container;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
-@media only screen and (min-width: 1024px) {
-    .grid-container-center {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {}

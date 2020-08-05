@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-    <title>CSS Crawl</title>
+    <title>Pixel Perfect</title>
 </head>
 
 <body>
@@ -14,60 +14,70 @@
 
         <object id="menu-button" type="image/svg+xml" data="./assets/icons/Menu-button.svg"></object>
     </header>
-    <div id="content">
-        <main class="flex-container-col-A">
 
-            <div id="search" class="gray-bubble container-left">
+    <div id="content" class="flex-container-col-A">
+        <section id="hero-section" class="flex-container-col-A">
+            <img id="hero-section__hero-img" src="./assets/images/banner-mobile.png" alt="Banner">
 
-                <object type="image/svg+xml" data="./assets/icons/search-24px.svg" class="topbar-icon"></object>
+            <h1 class="hero-header">Los Mejores agentes de seguridad</h1>
+            <div id="hero-section__input" class="flex-container-row-B">
+                <input type="text" placeholder="Buscar por Ubicación" />
 
-                <input id="search-input" type="text" placeholder="Buscar por Ubicación" />
-
+                <img class="hero-section__icon-img" src="./assets/icons/search.png" alt="Lupa">
             </div>
+        </section>
 
-            <ul id="contract-service-canvas" class="grid-container-center">
+        <main class="flex-container-col-A">
+            <ul id="contract-service-canvas" class="flex-container-col-A">
                 <li class="contract-service">
-                    <h2>Chuck Norris Bodyguards</h2>
-                    <img src="https://via.placeholder.com/175">
-                    <p>
+                    <h2 class="contract-service__header text-A">Chuck Norris Bodyguards</h2>
+                    <div class="contract-service__line"></div>
+                    <img class="contract-service__img" src="./assets/images/chuck-norris-logo.png">
+                    <p class="contract-service__text text-C">
                         Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
                     </p>
-                    <span>Desde: $15/12 horas</span>
-                    <div class="button">Contratar</div>
+                    <span class="contract-service__span text-B">Desde: $15/12 horas</span>
+                    <div class="button text-B">Contratar</div>
                 </li>
                 <li class="contract-service">
-                    <h2>Chuck Norris Bodyguards</h2>
-                    <img src="https://via.placeholder.com/175">
-                    <p>
+                    <h2 class="contract-service__header text-A">Chuck Norris Bodyguards</h2>
+                    <div class="contract-service__line"></div>
+                    <img class="contract-service__img" src="./assets/images/donuts-security.png">
+                    <p class="contract-service__text text-C">
                         Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
                     </p>
-                    <span>Desde: $15/12 horas</span>
-                    <div class="button">Contratar</div>
+                    <span class="contract-service__span text-B">Desde: $15/12 horas</span>
+                    <div class="button text-B">Contratar</div>
                 </li>
                 <li class="contract-service">
-                    <h2>Chuck Norris Bodyguards</h2>
-                    <img src="https://via.placeholder.com/175">
-                    <p>
+                    <h2 class="contract-service__header text-A">Chuck Norris Bodyguards</h2>
+                    <div class="contract-service__line"></div>
+                    <img class="contract-service__img" src="./assets/images/power-rangers-logo.png">
+                    <p class="contract-service__text text-C">
                         Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
                     </p>
-                    <span>Desde: $15/12 horas</span>
-                    <div class="button">Contratar</div>
+                    <span class="contract-service__span text-B">Desde: $15/12 horas</span>
+                    <div class="button text-B">Contratar</div>
                 </li>
                 <li class="contract-service">
-                    <h2>Chuck Norris Bodyguards</h2>
-                    <img src="https://via.placeholder.com/175">
-                    <p>
+                    <h2 class="contract-service__header text-A">Chuck Norris Bodyguards</h2>
+                    <div class="contract-service__line"></div>
+                    <img class="contract-service__img" src="./assets/images/raptor-squad-logo.jpg">
+                    <p class="contract-service__text text-C">
                         Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
                     </p>
-                    <span>Desde: $15/12 horas</span>
-                    <div class="button">Contratar</div>
+                    <span class="contract-service__span text-B">Desde: $15/12 horas</span>
+                    <div class="button text-B">Contratar</div>
                 </li>
             </ul>
         </main>
 
-        <footer class="flex-container-col-B">
-            <span>Desarrollado por Akurey.com <br /> Todos los derechos reservados.</span>
-            <span><a><u>Términos y Condiciones</u></a></span>
+        <footer class="flex-container-col-B text-B">
+            <div id="footer__text" class="flex-container-col-B">
+                <span>Desarrollado por Akurey.com |</span>
+                <span>Todos los derechos reservados.</span>
+            </div>
+            <span id="footer__terms"><a><u>Términos y Condiciones</u></a></span>
         </footer>
     </div>
 </body>

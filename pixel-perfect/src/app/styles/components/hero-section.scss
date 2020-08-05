@@ -1,0 +1,33 @@
+$component: 'hero-section';
+##{$component} {
+    width: 100vw;
+    margin-bottom: 4vh;
+    ##{$component}__hero-img {
+        width: 100vw;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 2vh;
+    }
+    h1 {
+        width: 80%;
+        margin-bottom: 3vh;
+    }
+    ##{$component}__input {
+        width: 80%;
+        height: 15%;
+        background-color: transparent;
+        color: $third-color;
+        border: 1px solid $third-color;
+        border-radius: 3vh;
+        justify-content: space-between;
+        input {
+            width: 75%;
+            margin-left: 5%;
+        }
+    }
+    .#{$component}__icon-img {
+        width: 30px;
+        height: 30px;
+        margin-right: 3%;
+    }
+}

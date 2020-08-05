@@ -1,0 +1,19 @@
+header {
+    position: fixed;
+    height: 10vh;
+    z-index: 1;
+    width: 100vw;
+    color: $first-color;
+    background-color: $second-color;
+    #menu-button {
+        height: 6vh;
+        width: 10vw;
+        margin-right: 5%;
+    }
+    #logo {
+        height: 8vh;
+        width: auto;
+        object-fit: contain;
+        margin-left: 5%;
+    }
+}
