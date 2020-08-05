@@ -1,13 +1,16 @@
 @import '../resets.scss';
 @import '../globals/global.scss';
-@import '../theme/theme.scss';
+@import '../theme/theme-color.scss';
 @import '../components/button.scss';
+@import '../components/hero-section.scss';
 @import '../components/contract-service.scss';
 header {
     position: fixed;
-    height: 77px;
+    height: 12vh;
     z-index: 1;
     width: 100vw;
+    color: $first-color;
+    background-color: $second-color;
 }
 
 main {
@@ -21,6 +24,8 @@ footer {
     grid-area: 2/1/3/2;
     height: 88px;
     padding-left: 21px;
+    color: $first-color;
+    background-color: $second-color;
 }
 
 footer span {

@@ -20,13 +20,15 @@
     },
     "homepage": "https://github.com/richbm10/Jedi-Training-Akurey#readme",
     "devDependencies": {
+        "autoprefixer": "^9.8.6",
         "gulp": "^4.0.2",
         "gulp-concat": "^2.6.1",
         "gulp-postcss": "^8.0.0",
         "gulp-sass": "^4.1.0",
         "gulp-uglifycss": "^1.1.0"
     },
-    "dependencies": {
-        "autoprefixer": "^9.8.6"
-    }
+    "dependencies": {},
+    "browserslist": [
+        "> 1%"
+    ]
 }
