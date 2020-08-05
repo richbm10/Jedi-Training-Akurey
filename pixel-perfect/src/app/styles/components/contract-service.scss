@@ -54,8 +54,9 @@
     }
 }
 
-#contract-service-container {
+#contract-service-canvas {
     padding: 5% 0;
+    width: 100%;
 }
 
 @media only screen and (min-width: 360px) {
@@ -77,10 +78,11 @@
 @media only screen and (min-width: 768px) {
     .contract-service {
         grid-template-columns: 30vw 30vw;
-        grid-template-columns: fit-content(175px) fit-content(175px);
+        grid-template-columns: fit-content(165px) fit-content(165px);
         grid-template-rows: 2vh 2vh 20vh 4vh;
     }
-    #contract-service-container {
+    #contract-service-canvas {
+        flex-flow: row wrap;
         max-width: 1280px;
     }
 }
@@ -88,13 +90,10 @@
 @media only screen and (min-width: 1024px) {
     .contract-service {
         grid-template-columns: 30vw 30vw;
-        grid-template-columns: fit-content(175px) fit-content(175px);
+        grid-template-columns: fit-content(165px) fit-content(165px);
         grid-template-rows: 2vh 2vh 10vh 2vh;
         .contract-service__text {
             line-height: 0.75rem;
         }
-    }
-    #contract-service-canvas {
-        flex-flow: row wrap;
     }
 }
