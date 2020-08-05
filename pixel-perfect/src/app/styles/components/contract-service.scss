@@ -1,117 +1,98 @@
 .contract-service {
     display: grid;
     grid-template-columns: 40vw 40vw;
-    grid-template-rows: 4vh 20vh 4vh;
-    justify-items: stretch;
-    align-items: stretch;
+    grid-template-rows: 2vh 2vh 20vh 4vh;
     margin: 1%;
+    .contract-service__header {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+    .contract-service__line {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        height: 1px;
+        border-top: 1px solid $fourth-color;
+        align-self: center;
+    }
+    .contract-service__text {
+        grid-column: 2;
+        grid-row: 3;
+        margin-left: 5%;
+        line-height: 0.60rem;
+        overflow: auto;
+        text-align: justify;
+    }
+    .contract-service__img {
+        grid-column: 1;
+        grid-row: 3;
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        object-position: 0;
+    }
+    .button {
+        grid-column: 2;
+        grid-row: 4;
+        justify-self: center;
+        align-self: center;
+        place-self: center stretch;
+        height: 80%;
+    }
+    .contract-service__span {
+        grid-column: 1;
+        grid-row: 4;
+        align-self: center;
+        font-weight: bold;
+    }
+    .contract-service__header,
+    .contract-service__img,
+    .button,
+    .contract-service__text,
+    .contract-service__span {
+        justify-self: stretch;
+        align-self: stretch;
+    }
 }
 
-.contract-service h2 {
-    font-size: 0.75rem;
-    grid-area: 1/1/2/3;
-}
-
-.contract-service h2::after {
-    content: '';
-    margin-top: 1.5%;
-    width: 100%;
-    height: 1px;
-    display: block;
-    background: $third-color;
-}
-
-.contract-service p {
-    font-size: 0.60rem;
-    grid-area: 2/2/3/3;
-    margin-left: 5%;
-    line-height: 0.60rem;
-    overflow: auto;
-    text-align: justify;
-}
-
-.contract-service img {
-    grid-area: 2/1/3/2;
-    object-fit: contain;
-    width: 100%;
-    height: auto;
-    object-position: 0;
-}
-
-.contract-service .button {
-    grid-area: 3/2/4/3;
-    justify-self: center;
-    align-self: center;
-    place-self: center stretch;
-    height: 80%;
-}
-
-.contract-service span {
-    grid-area: 3/1/4/2;
-    align-self: center;
-    font-weight: bold;
-}
-
-.contract-service .button,
-.contract-service span {
-    font-size: 0.70rem;
-}
-
-#contract-service-canvas {
-    width: 100%;
+#contract-service-container {
     padding: 5% 0;
 }
 
 @media only screen and (min-width: 360px) {
-    .contract-service p {
-        font-size: 0.70rem;
-        line-height: 0.75rem;
+    .contract-service {
+        .contract-service__text {
+            line-height: 0.75rem;
+        }
     }
 }
 
 @media only screen and (min-width: 450px) and (max-width: 768px) {
-    .contract-service h2 {
-        font-size: 1.20rem;
-    }
-    .contract-service .button,
-    .contract-service span {
-        font-size: 1.15rem;
-    }
-    .contract-service p {
-        font-size: 1.00rem;
-        line-height: 1.25rem;
+    .contract-service {
+        .contract-service__text {
+            line-height: 1.25rem;
+        }
     }
 }
 
 @media only screen and (min-width: 768px) {
     .contract-service {
+        grid-template-columns: 30vw 30vw;
         grid-template-columns: fit-content(175px) fit-content(175px);
+        grid-template-rows: 2vh 2vh 20vh 4vh;
     }
-    .contract-service h2::after {
-        margin-top: 3%;
-    }
-    #contract-service-canvas {
+    #contract-service-container {
         max-width: 1280px;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .contract-service {
-        grid-template-rows: 2vh 10vh 2vh;
-    }
-    .contract-service h2 {
-        font-size: 0.75rem;
-    }
-    .contract-service h2::after {
-        margin-top: 1%;
-    }
-    .contract-service .button,
-    .contract-service span {
-        font-size: 0.70rem;
-    }
-    .contract-service p {
-        font-size: 0.55rem;
-        line-height: 0.75rem;
+        grid-template-columns: 30vw 30vw;
+        grid-template-columns: fit-content(175px) fit-content(175px);
+        grid-template-rows: 2vh 2vh 10vh 2vh;
+        .contract-service__text {
+            line-height: 0.75rem;
+        }
     }
     #contract-service-canvas {
         flex-flow: row wrap;
