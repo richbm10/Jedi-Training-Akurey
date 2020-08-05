@@ -1,0 +1,14 @@
+#content {
+    footer {
+        overflow: inherit;
+        height: 88px;
+        width: 100%;
+        padding-left: 21px;
+        color: $first-color;
+        background-color: $second-color;
+        span {
+            font-size: 0.75rem;
+            line-height: 14px;
+        }
+    }
+}
