@@ -1,8 +1,8 @@
 .contract-service {
     display: grid;
     grid-template-columns: 40vw 40vw;
-    grid-template-rows: 2vh 2vh 20vh 4vh;
-    margin: 1%;
+    grid-template-rows: 10% 10% 20vh 4vh;
+    margin: 0 1% 8vh 1%;
     .contract-service__header {
         grid-column: 1 / span 2;
         grid-row: 1;
@@ -29,6 +29,8 @@
         width: 100%;
         height: auto;
         object-position: 0;
+        justify-self: stretch;
+        align-self: stretch;
     }
     .button {
         grid-column: 2;
@@ -44,22 +46,21 @@
         align-self: center;
         font-weight: bold;
     }
-    .contract-service__header,
-    .contract-service__img,
-    .button,
-    .contract-service__text,
-    .contract-service__span {
-        justify-self: stretch;
-        align-self: stretch;
-    }
+    // .contract-service__header,
+    // .contract-service__img,
+    // .button,
+    // .contract-service__text,
+    // .contract-service__span {
+    //     justify-self: stretch;
+    //     align-self: stretch;
+    // }
 }
 
 #contract-service-canvas {
-    padding: 5% 0;
     width: 100%;
 }
 
-@media only screen and (min-width: 360px) {
+@media only screen and (min-device-width: 360px) {
     .contract-service {
         .contract-service__text {
             line-height: 0.75rem;
@@ -67,7 +68,7 @@
     }
 }
 
-@media only screen and (min-width: 450px) and (max-width: 768px) {
+@media only screen and (min-device-width: 450px) and (max-device-width: 768px) {
     .contract-service {
         .contract-service__text {
             line-height: 1.25rem;
@@ -75,11 +76,10 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-device-width: 768px) {
     .contract-service {
-        grid-template-columns: 30vw 30vw;
-        grid-template-columns: fit-content(165px) fit-content(165px);
-        grid-template-rows: 2vh 2vh 20vh 4vh;
+        grid-template-columns: 21.5vw 21.5vw;
+        grid-template-rows: 10% 10% 20vh 4vh;
     }
     #contract-service-canvas {
         flex-flow: row wrap;
@@ -87,13 +87,27 @@
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-device-width: 1024px) {
     .contract-service {
-        grid-template-columns: 30vw 30vw;
-        grid-template-columns: fit-content(165px) fit-content(165px);
-        grid-template-rows: 2vh 2vh 10vh 2vh;
+        margin: 0 2% 8vh 2%;
+        grid-template-columns: 135px 135px;
+        grid-template-rows: 10% 10% 10vh 2vh;
         .contract-service__text {
             line-height: 0.75rem;
         }
+    }
+}
+
+@media only screen and (min-device-width: 1200px) and (min-width: 768px) {
+    .contract-service {
+        grid-template-columns: 20.5vw 20.5vw;
+        grid-template-rows: 10% 10% 20vh 2vh;
+    }
+}
+
+@media only screen and (min-device-width: 1200px) and (min-width: 1100px) {
+    .contract-service {
+        grid-template-columns: 135px 135px;
+        grid-template-rows: 10% 10% 20vh 2vh;
     }
 }

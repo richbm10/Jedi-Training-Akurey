@@ -7,18 +7,12 @@
 @import '../components/hero-section.scss';
 @import '../components/contract-service.scss';
 @import '../components/footer.scss';
-html,
-body {
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
 #content {
     overflow: hidden;
-    padding-top: 12vh;
+    position: relative;
+    top: 10vh;
     main {
         overflow: inherit;
-        padding-bottom: 5vh;
         width: 90vw;
     }
 }

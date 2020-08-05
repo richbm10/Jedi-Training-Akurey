@@ -6,9 +6,27 @@
         padding-left: 21px;
         color: $first-color;
         background-color: $second-color;
-        span {
-            font-size: 0.75rem;
-            line-height: 14px;
+        #footer__text {
+            span {
+                margin-bottom: 1%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #content {
+        footer {
+            align-items: center;
+            align-content: center;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            #footer__text {
+                margin-left: 5%;
+            }
+            #footer__terms {
+                margin-right: 5%;
+            }
         }
     }
 }
