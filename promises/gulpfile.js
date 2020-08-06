@@ -6,7 +6,7 @@ var concat = require('gulp-concat');
 var uglifycss = require('gulp-uglifycss');
 const postcss = require('gulp-postcss');
 
-function sassTask() {
+function stylesTask() {
     const processorsArray = [
         require('autoprefixer')({ grid: 'autoplace' })
     ];
@@ -25,13 +25,18 @@ function htmlTask() {
         .pipe(gulp.dest('dist'));
 }
 
+function javascriptTask() {
+    return src('src/app/js/*.js')
+        .pipe(gulp.dest('dist'));
+}
+
 function assetsTask() {
     return src('src/assets/**/*')
         .pipe(gulp.dest('dist/assets'));
 }
 
 function watchTask() {
-    watch(['*.html', '*.scss'], { interval: 1000 }, series(sassTask, assetsTask, htmlTask));
+    watch(['*.html', '*.scss'], { interval: 1000 }, series(stylesTask, assetsTask, htmlTask, javascriptTask));
 }
 
-exports.default = series(sassTask, assetsTask, htmlTask, watchTask);
+exports.default = series(stylesTask, assetsTask, htmlTask, javascriptTask, watchTask);
