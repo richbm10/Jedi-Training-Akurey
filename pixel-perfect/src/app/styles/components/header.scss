@@ -5,11 +5,11 @@ header {
     width: 100vw;
     color: $first-color;
     background-color: $second-color;
-    #menu-button {
+    #header__menu-button {
         font-size: 2rem;
         margin-right: 5%;
     }
-    #logo {
+    #header__logo {
         height: 8vh;
         width: auto;
         object-fit: contain;
@@ -20,10 +20,10 @@ header {
 @media only screen and (min-device-width: 768px) {
     header {
         height: 8vh;
-        #menu-button {
+        #header__menu-button {
             font-size: 3rem;
         }
-        #logo {
+        #header__logo {
             height: 6vh;
         }
     }
@@ -31,7 +31,7 @@ header {
 
 @media only screen and (min-device-width: 1024px) {
     header {
-        #menu-button {
+        #header__menu-button {
             display: none;
         }
     }
