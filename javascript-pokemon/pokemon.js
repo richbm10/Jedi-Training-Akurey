@@ -9,7 +9,7 @@ const Pokemon = function(pName, pType, pAttack, pDefense) {
         'grass': 'water',
         'electric': 'water'
     };
-    const getEffectiveness = function(defender) {
+    const getEffectiveness = (defender) => {
         if (this.type === defender.type) {
             return 1;
         } else if (attackEffectiveness[this.type] === defender.type) {
@@ -18,7 +18,7 @@ const Pokemon = function(pName, pType, pAttack, pDefense) {
             return 0.5;
         }
     };
-    this.damage = function(defender) {
+    this.damage = (defender) => {
         return Math.round(50 * (this.attack / defender.defense) * getEffectiveness(defender));
     }
     return this;
