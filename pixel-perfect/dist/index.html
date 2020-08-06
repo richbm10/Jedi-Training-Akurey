@@ -13,17 +13,24 @@
         <img id="logo" src="./assets/images/logo.png" />
 
         <object id="menu-button" type="image/svg+xml" data="./assets/icons/Menu-button.svg"></object>
+        <nav class="nav-bar text-B flex-container-row-B">
+            <a class="active">Directorio de Agentes</a>
+            <a>Contacto</a>
+            <a>Ingresar</a>
+        </nav>
     </header>
 
     <div id="content" class="flex-container-col-A">
         <section id="hero-section" class="flex-container-col-A">
-            <img id="hero-section__hero-img" src="./assets/images/banner-mobile.png" alt="Banner">
+            <div id="hero-section__hero-img"></div>
 
-            <h1 class="hero-header">Los Mejores agentes de seguridad</h1>
-            <div id="hero-section__input" class="flex-container-row-B">
-                <input type="text" placeholder="Buscar por Ubicación" />
+            <div id="hero-section__content">
+                <h1 class="hero-header">Los Mejores agentes de seguridad</h1>
+                <div id="hero-section__input" class="flex-container-row-B">
+                    <input class="text-A" type="text" placeholder="Buscar por Ubicación" />
 
-                <img class="hero-section__icon-img" src="./assets/icons/search.png" alt="Lupa">
+                    <img class="hero-section__icon-img" src="./assets/icons/search.png" alt="Lupa">
+                </div>
             </div>
         </section>
 
@@ -85,12 +92,40 @@
                     <span class="contract-service__span text-B">Desde: $15/12 horas</span>
                     <div class="button text-B">Contratar</div>
                 </li>
+                <li class="contract-service">
+                    <div class="contract-service__header flex-container-row-A">
+                        <h2 class="text-A">Chuck Norris Bodyguards</h2>
+
+                        <img class="contract-service__icon" src="./assets/icons/certified.png">
+                    </div>
+                    <div class="contract-service__line"></div>
+                    <img class="contract-service__img" src="./assets/images/raptor-squad-logo.jpg">
+                    <p class="contract-service__text text-C">
+                        Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
+                    </p>
+                    <span class="contract-service__span text-B">Desde: $15/12 horas</span>
+                    <div class="button text-B">Contratar</div>
+                </li>
+                <li class="contract-service">
+                    <div class="contract-service__header flex-container-row-A">
+                        <h2 class="text-A">Chuck Norris Bodyguards</h2>
+
+                        <img class="contract-service__icon" src="./assets/icons/certified.png">
+                    </div>
+                    <div class="contract-service__line"></div>
+                    <img class="contract-service__img" src="./assets/images/raptor-squad-logo.jpg">
+                    <p class="contract-service__text text-C">
+                        Nunc sit amet sem libero. Donec dictum magna id velit ultricies porttitor. Suspendisse sed nibh sed leo dignissim finibus id rhoncus nunc. Curabitur orci tellus, venenatis sit amet condimentum ut, tincidunt id velit. Aliquam sed metus risus.
+                    </p>
+                    <span class="contract-service__span text-B">Desde: $15/12 horas</span>
+                    <div class="button text-B">Contratar</div>
+                </li>
             </ul>
         </main>
 
         <footer class="flex-container-col-B text-B">
             <div id="footer__text" class="flex-container-col-B">
-                <span>Desarrollado por Akurey.com |</span>
+                <span>Desarrollado por Akurey.com | </span>
                 <span>Todos los derechos reservados.</span>
             </div>
             <span id="footer__terms"><a><u>Términos y Condiciones</u></a></span>

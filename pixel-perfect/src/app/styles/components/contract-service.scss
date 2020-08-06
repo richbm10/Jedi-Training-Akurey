@@ -41,8 +41,8 @@
         grid-row: 4;
         justify-self: center;
         align-self: center;
-        place-self: center stretch;
         height: 80%;
+        width: 85%;
     }
     .contract-service__span {
         grid-column: 1;
@@ -76,6 +76,13 @@
     .contract-service {
         grid-template-columns: 21.5vw 21.5vw;
         grid-template-rows: 14% 5% 20vh 4vh;
+        margin: 0 2% 8vh 2%;
+        .contract-service__header {
+            .contract-service__icon {
+                width: 35px;
+                height: 35px;
+            }
+        }
     }
     #contract-service-canvas {
         flex-flow: row wrap;
@@ -85,16 +92,16 @@
 
 @media only screen and (min-device-width: 1024px) {
     .contract-service {
-        margin: 0 2% 8vh 2%;
-        grid-template-columns: 135px 135px;
-        grid-template-rows: 14% 5% 10vh 2vh;
+        margin: 0 2% 5vh 2%;
+        grid-template-columns: 150px 135px;
+        grid-template-rows: 15% 10% 10vh 3vh;
         .contract-service__text {
             line-height: 0.75rem;
         }
     }
 }
 
-@media only screen and (min-device-width: 1200px) and (min-width: 768px) {
+@media only screen and (min-device-width: 1200px) {
     .contract-service {
         grid-template-columns: 20.5vw 20.5vw;
         grid-template-rows: 14% 5% 20vh 2vh;
@@ -105,5 +112,27 @@
     .contract-service {
         grid-template-columns: 135px 135px;
         grid-template-rows: 14% 5% 20vh 2vh;
+    }
+    #contract-service-canvas {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-device-width: 1200px) and (min-width: 1200px) {
+    #contract-service-canvas {
+        width: 80.5%;
+    }
+}
+
+@media only screen and (min-device-width: 1200px) and (min-width: 1300px) {
+    .contract-service {
+        grid-template-columns: 135px 135px;
+        grid-template-rows: 14% 5% 20vh 2vh;
+    }
+}
+
+@media only screen and (min-device-width: 1200px) and (min-width: 1500px) {
+    #contract-service-canvas {
+        width: 65%;
     }
 }

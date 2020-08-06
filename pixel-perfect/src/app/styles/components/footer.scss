@@ -1,7 +1,7 @@
 #content {
     footer {
         overflow: inherit;
-        height: 88px;
+        height: 8vh;
         width: 100%;
         padding-left: 21px;
         color: $first-color;
@@ -22,7 +22,8 @@
             flex-flow: row nowrap;
             justify-content: space-between;
             #footer__text {
-                margin-left: 5%;
+                flex-flow: row nowrap;
+                margin-left: 2%;
             }
             #footer__terms {
                 margin-right: 5%;

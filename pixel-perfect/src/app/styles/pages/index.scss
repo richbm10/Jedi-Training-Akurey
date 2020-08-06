@@ -3,6 +3,7 @@
 @import '../theme/theme-color.scss';
 @import '../theme/theme-font.scss';
 @import '../components/header.scss';
+@import '../components/nav-bar.scss';
 @import '../components/button.scss';
 @import '../components/hero-section.scss';
 @import '../components/contract-service.scss';
@@ -14,5 +15,13 @@
     main {
         overflow: inherit;
         width: 90vw;
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+    #content {
+        main {
+            width: 95vw;
+        }
     }
 }
