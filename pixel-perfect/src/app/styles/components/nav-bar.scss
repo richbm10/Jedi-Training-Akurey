@@ -5,7 +5,7 @@
         justify-content: space-around;
     }
     .active {
-        text-decoration: underline;
+        border-bottom: 3px solid $first-color;
     }
 }
 
