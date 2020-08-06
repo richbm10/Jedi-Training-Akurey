@@ -1,0 +1,91 @@
+$component: 'hero-section';
+##{$component} {
+    width: 100vw;
+    margin-bottom: 4vh;
+    h1 {
+        margin-bottom: 3vh;
+    }
+    ##{$component}__icon-img {
+        font-size: 1.5em;
+        margin-right: 3%;
+    }
+    ##{$component}__content {
+        width: 80%;
+    }
+    ##{$component}__hero-img {
+        width: 100vw;
+        height: 50vh;
+        margin-bottom: 2vh;
+        background-image: url("./assets/images/banner-mobile.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    ##{$component}__input {
+        height: 5vh;
+        background-color: $first-color;
+        color: $third-color;
+        border: 1px solid $third-color;
+        border-radius: 3vh;
+        justify-content: space-between;
+        input {
+            width: 75%;
+            margin-left: 5%;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+    ##{$component} {
+        position: relative;
+        h1 {
+            width: 65%;
+            color: $first-color;
+        }
+        ##{$component}__icon-img {
+            font-size: 2em;
+        }
+        ##{$component}__content {
+            position: absolute;
+            bottom: 10%;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1024px) {
+    ##{$component} {
+        ##{$component}__hero-img {
+            background-image: url("./assets/images/banner.png");
+        }
+        h1 {
+            width: 100%;
+        }
+        ##{$component}__icon-img {
+            font-size: 3em;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1200px) {
+    ##{$component} {
+        ##{$component}__icon-img {
+            font-size: 2em;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1200px) and (min-width: 1200px) {
+    ##{$component} {
+        ##{$component}__hero-img {
+            height: 60vh;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1200px) and (min-width: 1500px) {
+    ##{$component} {
+        ##{$component}__hero-img {
+            height: 70vh;
+        }
+    }
+}

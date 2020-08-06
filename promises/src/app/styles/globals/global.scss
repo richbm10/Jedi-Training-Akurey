@@ -1,0 +1,35 @@
+%center-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-container-col-A {
+    @extend %center-container;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.flex-container-col-B {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.flex-container-row-A {
+    @extend %center-container;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.flex-container-row-B {
+    @extend %center-container;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 1024px) {}

@@ -1,0 +1,15 @@
+.button {
+    border-radius: 3vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $first-color;
+    background-color: $second-color;
+    border: 1px solid $second-color;
+}
+
+.button:hover {
+    background-color: $third-color;
+    border: 1px solid $third-color;
+}

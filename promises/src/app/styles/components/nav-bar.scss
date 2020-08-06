@@ -1,0 +1,18 @@
+.nav-bar {
+    color: $first-color;
+    display: none;
+    &.flex-container-row-B {
+        justify-content: space-around;
+    }
+    .nav-bar__active {
+        border-bottom: 3px solid $first-color;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) {
+    .nav-bar {
+        display: flex;
+        width: 35%;
+        margin-right: 5%;
+    }
+}
