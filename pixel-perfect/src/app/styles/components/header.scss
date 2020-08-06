@@ -6,8 +6,7 @@ header {
     color: $first-color;
     background-color: $second-color;
     #menu-button {
-        height: 6vh;
-        width: 10vw;
+        font-size: 2rem;
         margin-right: 5%;
     }
     #logo {
@@ -22,7 +21,7 @@ header {
     header {
         height: 8vh;
         #menu-button {
-            height: 5vh;
+            font-size: 3rem;
         }
         #logo {
             height: 6vh;
