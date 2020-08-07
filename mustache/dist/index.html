@@ -7,6 +7,24 @@
     <link href="https://file.myfontastic.com/Gd2jVkqTJospvzySm5YQuP/icons.css" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
     <title>Promises Exercise</title>
+
+    <script type="x-tmpl-mustache" id="contract-service-template">
+        <li class="contract-service">
+            <div class="contract-service__header flex-container-row-A">
+                <h2 class="text-A">{{name}}</h2>
+
+                <img class="contract-service__icon" src="./assets/icons/certified.png">
+            </div>
+            <div class="contract-service__line"></div>
+            <img class="contract-service__img" src={{image}}>
+            <p class="contract-service__text text-C">
+                {{description}}
+            </p>
+            <span class="contract-service__span text-B">Desde: ${{rate}}/{{hours}} horas</span>
+            <div class="button text-B">Contratar</div>
+        </li>
+    </script>
+    <script src="https://unpkg.com/mustache@latest"></script>
 </head>
 
 <body>
