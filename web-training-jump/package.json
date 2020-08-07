@@ -1,0 +1,36 @@
+{
+  "name": "web-training-jump",
+  "version": "1.0.0",
+  "description": "Whack a mole",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglifycss": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richbm10/Jedi-Training-Akurey.git"
+  },
+  "keywords": [
+    "javascript",
+    "sass",
+    "css3",
+    "html5",
+    "gulp"
+  ],
+  "author": "Ricardo Bonilla Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richbm10/Jedi-Training-Akurey/issues"
+  },
+  "homepage": "https://github.com/richbm10/Jedi-Training-Akurey#readme"
+}

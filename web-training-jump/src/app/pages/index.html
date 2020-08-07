@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML + JS + CSS</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <h1>Whack-a-mole! <span class="score">0</span></h1>
+    <div class="game">
+        <div class="hole hole1">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole2">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole3">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole4">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole5">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole6">
+            <div class="mole"></div>
+        </div>
+    </div>
+    <button onClick="game.startGame()">WHACK!</button>
+    <audio src="./assets/sounds/hihat.wav"></audio>
+    <audio src="./assets/sounds/kick.wav"></audio>
+    <script src="./index.js"></script>
+</body>
+
+</html>
