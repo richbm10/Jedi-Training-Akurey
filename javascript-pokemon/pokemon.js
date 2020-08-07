@@ -1,3 +1,11 @@
+/*
+    Pokemon:
+        - It is a function expression, so when it is called as new Pokemon(), an object instance is created. The
+        prototype of the instance is going to be the Pokemon function expression.
+        - Encapsulation: only the attributes and methods defined by "this" are going to be public for using them
+        on instances.
+*/
+
 const Pokemon = function(pName, pType, pAttack, pDefense) {
     this.name = pName;
     this.type = pType;
