@@ -1,16 +1,23 @@
+/*
+    IndexServices:
+        - Singleton Desgin Pattern for having only one instance of the services in the application.
+        - getCompanies:
+            Input:
+            Process: fetches the json of companies from my-json-server.typicode.com.
+            Output: the companies json.
+*/
+
 const IndexServices = (function() {
     let instance;
     return {
         getInstance: () => {
             if (!instance) {
                 instance = {
-                    companies: [],
                     companiesEndpoint: 'https://my-json-server.typicode.com/richbm10/Jedi-Training-Akurey/db',
                     getCompanies: async function() {
                         const response = await fetch(this.companiesEndpoint);
                         const resData = await response.json();
-                        this.companies = resData.companies;
-                        return this.companies;
+                        return resData.companies;
                     }
                 };
             }
