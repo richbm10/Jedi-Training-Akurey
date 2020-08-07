@@ -1,3 +1,10 @@
+/*
+    footer:
+        - Dimensions: width: 100vw - height: 8vh. The dimensions are relative to the viewport of the page, so
+        the footer is responsive.
+        - It is a flexbox container, its row-direction changes from column to row for tablets and desktop.
+*/
+
 #content {
     footer {
         overflow: inherit;

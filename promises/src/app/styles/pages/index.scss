@@ -1,3 +1,9 @@
+/*
+    #content:
+        - The page content is a flexbox container that wraps the main and footer layouts. Flexbox
+        was choosen instead of grid because it has a higher compatibility over different browsers.
+*/
+
 @import '../resets.scss';
 @import '../globals/global.scss';
 @import '../theme/theme-color.scss';
