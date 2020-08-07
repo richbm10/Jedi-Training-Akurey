@@ -1,3 +1,17 @@
+/*
+    #hero-section:
+        - Flexbox component that wraps the elements on a column orientation. For
+        tablets and desktop its position changes to relative, and the #hero-section__content
+        to absolute. This helps to place the content over the #hero-section__hero-img.
+        - Dimensions: width: 100vw - height: auto. The width is relative to the width of the viewport, and
+        the height is defined by the elements of the component.
+    
+    #hero-section__hero-img:
+        - Styles the hero image. In the case of desktop the background-image changes the url to the image for desktop.
+        - It is a background image for a div, so that it can be centered and set better the dimensions to
+        avoid a bad resolution.
+*/
+
 $component: 'hero-section';
 ##{$component} {
     width: 100vw;
