@@ -26,7 +26,7 @@ function filterList(contractServiceCanvas, searchTerm) {
     contractServiceCanvas.querySelectorAll(".contract-service").forEach(contractService => {
         let label = contractService.querySelector('.contract-service__header h2').textContent.toLowerCase();
         if (label.indexOf(searchTerm) != -1) {
-            contractService.style.display = "flex";
+            contractService.style.display = "grid";
         } else {
             contractService.style.display = "none";
         }
@@ -79,9 +79,16 @@ function createContractService(company) {
 function main() {
     const contractServiceCanvas = document.querySelector('#contract-service-canvas');
     const heroSectionInput = document.querySelector('#hero-section__input input');
+    const heroSectionIcon = document.querySelector('#hero-section__icon-img');
+
+    heroSectionIcon.addEventListener('click', (event) => {
+        filterList(contractServiceCanvas, heroSectionInput.value);
+    });
+
     heroSectionInput.addEventListener('keyup', (event) => {
         if (event.keyCode === 13) filterList(contractServiceCanvas, heroSectionInput.value);
     });
+
     services.getCompanies().then(companies => {
         companies.forEach(company => {
             contractServiceCanvas.appendChild(createContractService(company));
