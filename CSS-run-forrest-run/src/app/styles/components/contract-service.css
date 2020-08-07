@@ -1,3 +1,18 @@
+/*
+    This stylesheet defines the style of each contract-service component on the page, and
+    the styles of the container of those contract-services.
+
+    #cs-canvas:
+        - Container of the contract services components.
+        - Dimensions: width: 100% - height: auto. This dimensions set a container that covers
+        a 100% of the main width.
+    
+    .cs-canvas__contract-service:
+        - Each contract service is defined as a grid, because the amount of rows and columns are known.
+        Then, grid helps to define a responsive placement of the different elements of the component.
+        
+*/
+
 .cs-canvas__contract-service {
     display: grid;
     grid-template-columns: 40vw 40vw;

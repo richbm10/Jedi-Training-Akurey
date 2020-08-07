@@ -1,3 +1,12 @@
+/*
+    This global stylesheet defines global containers that are used in the application, so
+    the different pages can import it for using the containers.
+
+    The containers are defined as flexbox or grid, so they are used to style responsive components.
+    The flexbox is used as one dimensional container.
+    The grid is used as a multi dimensional container.
+*/
+
 .grid-container-center {
     display: grid;
     grid-template-columns: 1fr;

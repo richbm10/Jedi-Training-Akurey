@@ -1,3 +1,15 @@
+/*
+    This theme stylesheet sets the the color and font of the application, so it can be
+    imported by different pages for defining its theme.
+
+    The font-size is set directly to the dom root html. For then using rem
+    units that are relative to the font-size of the dom root.
+    This helps to only have one font-size defined with px, and all the other
+    fonts in the application are relative to it.
+    Then, the font size of the dom root is changed by the respective media-queries,
+    and all the fonts of the application are changed automatically.
+*/
+
 html {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;

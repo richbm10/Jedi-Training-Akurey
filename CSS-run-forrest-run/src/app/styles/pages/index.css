@@ -1,3 +1,10 @@
+/*
+    This index stylesheet sets the style of the complete index page of the application.
+
+    The page is defined as a greed for a better placement of layouts, by defining their
+    respective grid areas and its dimensions.
+*/
+
 body {
     display: grid;
     height: 100vh;
