@@ -1,0 +1,145 @@
+/*
+    #contract-service-canvas:
+        - Grid container of the contract services components. It has a single column, but
+        is change to two columns for tablets, and to three columns for desktop.
+        - Dimensions: width: 100% - height: auto. This dimensions set a container that covers
+        a 100% of the main width.
+    
+    .contract-service:
+        - Each contract service is defined as a grid, because the amount of rows and columns are known.
+        Then, grid helps to define a responsive placement of the different elements of the component.
+        - Dimensions: grid-template-columns: 40vw 40vw (width) - grid-template-rows: 14% 5% 20vh 4vh (height).
+        This dimensions are relative to the viewport of the page, so the component is responsive. In the case
+        of the % units, they are relative to the #contract-service-canvas height.
+        - The placement of the elements is with grid-column and grid-row, which are properties that Autoprefixer
+        use to add the respective properties for compatibility over browsers.
+*/
+
+.contract-service {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 14% 5% 20vh 4vh;
+    .contract-service__header {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        .contract-service__icon {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .contract-service__line {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        height: 1px;
+        border-top: 1px solid $fourth-color;
+        align-self: center;
+    }
+    .contract-service__text {
+        grid-column: 2;
+        grid-row: 3;
+        margin-left: 5%;
+        line-height: 0.60rem;
+        overflow: auto;
+        text-align: justify;
+    }
+    .contract-service__img {
+        grid-column: 1;
+        grid-row: 3;
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        object-position: 0;
+        justify-self: stretch;
+        align-self: stretch;
+    }
+    .button {
+        grid-column: 2;
+        grid-row: 4;
+        justify-self: center;
+        align-self: center;
+        height: 80%;
+        width: 85%;
+    }
+    .contract-service__span {
+        grid-column: 1;
+        grid-row: 4;
+        align-self: center;
+        font-weight: bold;
+    }
+}
+
+#contract-service-canvas {
+    width: 100%;
+}
+
+@media only screen and (min-device-width: 360px) {
+    .contract-service {
+        .contract-service__text {
+            line-height: 0.75rem;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 450px) and (max-device-width: 768px) {
+    .contract-service {
+        .contract-service__text {
+            line-height: 1.25rem;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+    .contract-service {
+        grid-template-columns: 21.5vw 21.5vw;
+        .contract-service__header {
+            .contract-service__icon {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+    #contract-service-canvas {
+        flex-flow: row wrap;
+        max-width: 1280px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) {
+    .contract-service {
+        grid-template-columns: 150px 135px;
+        grid-template-rows: 15% 10% 10vh 3vh;
+        .contract-service__text {
+            line-height: 0.75rem;
+        }
+    }
+    #contract-service-canvas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-device-width: 1200px) {
+    .contract-service {
+        grid-template-columns: 20.5vw 20.5vw;
+        grid-template-rows: 14% 5% 20vh 2vh;
+    }
+    #contract-service-canvas {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-device-width: 1200px) and (min-width: 768px) {
+    #contract-service-canvas {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-device-width: 1200px) and (min-width: 1100px) {
+    .contract-service {
+        grid-template-columns: 155px 155px;
+        grid-template-rows: 14% 5% 20vh 2vh;
+    }
+    #contract-service-canvas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
