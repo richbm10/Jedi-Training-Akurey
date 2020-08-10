@@ -2,6 +2,7 @@
 @import "../theme/theme-font.scss";
 @import "../theme/theme-color.scss";
 @import "../globals/global.scss";
+@import "../components/table.scss";
 @import "../components/button.scss";
 @import "../components/hole.scss";
 @import "../components/mole.scss";
@@ -20,7 +21,7 @@ main {
     h1 {
         line-height: 1;
         background: $first-color;
-        margin-bottom: 5vh;
+        margin: 3vh 0;
     }
     .score {
         line-height: 1;
@@ -29,6 +30,22 @@ main {
     .game {
         width: 100%;
         flex-wrap: wrap;
-        margin-bottom: 5vh;
+        margin-bottom: 2vh;
+    }
+    #play-form {
+        width: 70vw;
+        align-self: flex-start;
+        input {
+            width: 60%;
+            height: 100%;
+            margin-left: 2%;
+            background-color: $second-color;
+            color: $third-color;
+            border: none;
+            border-radius: 1vh;
+            &::placeholder {
+                color: $fourth-color;
+            }
+        }
     }
 }

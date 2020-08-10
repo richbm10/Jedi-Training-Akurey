@@ -1,5 +1,6 @@
 button {
-    background-color: firebrick;
-    align-self: flex-start;
+    background-color: $second-color;
+    color: $third-color;
     margin-left: 2vw;
+    border-radius: 1vh;
 }

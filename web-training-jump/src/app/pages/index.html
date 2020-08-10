@@ -11,6 +11,17 @@
 <body>
     <main class="flex-container-col-A">
         <h1 class="text-A">Whack-a-mole! <span class="score">0</span></h1>
+
+        <table id="ranking-table" class="text-B">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="ranking-tbody"></tbody>
+        </table>
+
         <div class="game flex-container-row-B">
             <div class="hole hole1">
                 <div class="mole"></div>
@@ -40,7 +51,12 @@
                 <div class="mole"></div>
             </div>
         </div>
-        <button class="text-A" onClick="game.startGame()">WHACK!</button>
+
+        <form id="play-form" class="flex-container-row-B text-B">
+            <button type="button" onClick="game.startGame()">WHACK!</button>
+
+            <input type="text" name="username" placeholder="Type your name..">
+        </form>
     </main>
 
     <audio id="hihat-sound" src="./assets/sounds/hihat.wav"></audio>
