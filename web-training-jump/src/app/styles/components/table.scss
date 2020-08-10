@@ -1,8 +1,7 @@
 #ranking-table {
     border-collapse: collapse;
     margin-bottom: 2vh;
-    font-size: 0.9em;
-    width: 80vw;
+    width: 50vw;
     border-radius: 1vh;
     overflow: hidden;
 }
@@ -16,7 +15,7 @@
 
 #ranking-table th,
 #ranking-table td {
-    padding: 2% 5%;
+    padding: 1% 5%;
 }
 
 #ranking-table tbody tr {

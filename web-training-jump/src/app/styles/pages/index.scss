@@ -15,6 +15,11 @@ body {
     justify-content: center;
 }
 
+body,
+button {
+    cursor: url('./assets/imgs/mole-cursor.png'), auto;
+}
+
 main {
     width: 90vw;
     height: 100vh;
@@ -43,6 +48,7 @@ main {
             color: $third-color;
             border: none;
             border-radius: 1vh;
+            font-size: inherit;
             &::placeholder {
                 color: $fourth-color;
             }

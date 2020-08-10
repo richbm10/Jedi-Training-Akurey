@@ -11,8 +11,8 @@ function Game() {
     const playForm = document.querySelector('#play-form');
     const rankingTableBody = document.querySelector('#ranking-tbody');
     const minPeepTime = 200;
-    const maxPeepTime = 1000;
     const RANK_TOP = 5;
+    let maxPeepTime = 1000;
     let ranking = [];
     let lastHole;
     let timeUp = false;
@@ -98,7 +98,6 @@ function Game() {
         this.peep();
         setTimeout(() => {
             timeUp = true;
-            console.log(ranking.length);
             this.updateRanking();
             this.setRanking();
             window.localStorage.setItem('ranking', JSON.stringify(ranking));
@@ -108,6 +107,8 @@ function Game() {
     this.bonk = e => {
         if (!e.isTrusted) return;
         score++;
+        console.log(maxPeepTime);
+        if (score % 5 === 0 && maxPeepTime > 300) maxPeepTime -= (score / 5) * 10; //increases mole speed each 5 levels
         e.target.classList.remove('up');
         scoreBoard.textContent = score;
         successAudio.play();
