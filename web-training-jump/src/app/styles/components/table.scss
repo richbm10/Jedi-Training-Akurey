@@ -1,0 +1,32 @@
+#ranking-table {
+    border-collapse: collapse;
+    margin-bottom: 2vh;
+    width: 50vw;
+    border-radius: 1vh;
+    overflow: hidden;
+}
+
+#ranking-table thead tr {
+    background-color: $second-color;
+    color: $third-color;
+    text-align: left;
+    font-weight: bold;
+}
+
+#ranking-table th,
+#ranking-table td {
+    padding: 1% 5%;
+}
+
+#ranking-table tbody tr {
+    border: 2px solid $second-color;
+}
+
+#ranking-table tbody tr:nth-of-type(even) {
+    background-color: $third-color;
+}
+
+#ranking-table tbody tr.active-row {
+    font-weight: bold;
+    color: $second-color;
+}

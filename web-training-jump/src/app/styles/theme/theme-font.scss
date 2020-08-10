@@ -1,0 +1,32 @@
+/*
+    Global font of the application. Defines a font-size on the html dom root, for then using
+    relative rem units. This helps to centralize the font-sizes of the application, and change
+    all of them by only changing the root font-size.
+*/
+
+html {
+    font-size: 16px;
+    font-weight: 200;
+    font-family: 'helvetica neue';
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+}
+
+.text-A {
+    font-size: 2rem;
+}
+
+.text-B {
+    font-size: 1rem;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .text-A {
+        font-size: 3rem;
+    }
+    .text-B {
+        font-size: 1.5rem;
+    }
+}

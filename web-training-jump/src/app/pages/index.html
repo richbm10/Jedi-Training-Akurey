@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + JS + CSS</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <main class="flex-container-col-A">
+        <h1 class="text-A">Whack-a-mole! <span class="score">0</span></h1>
+
+        <table id="ranking-table" class="text-B">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="ranking-tbody"></tbody>
+        </table>
+
+        <div class="game flex-container-row-B">
+            <div class="hole hole1">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole2">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole3">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole4">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole5">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole6">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole7">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole8">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole9">
+                <div class="mole"></div>
+            </div>
+        </div>
+
+        <form id="play-form" class="flex-container-row-B text-B">
+            <button type="button" onClick="game.startGame()">WHACK!</button>
+
+            <input type="text" name="username" placeholder="Type your name..">
+        </form>
+    </main>
+
+    <audio id="hihat-sound" src="./assets/sounds/hihat.wav"></audio>
+    <audio id="kick-sound" src="./assets/sounds/kick.wav"></audio>
+    <script src="./index.js"></script>
+</body>
+
+</html>
