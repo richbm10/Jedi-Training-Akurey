@@ -30,12 +30,25 @@ function Game() {
     this.updateRanking = () => {
         if (currentUser === '') currentUser = 'Anónimo';
         let newRanking = [];
-        for (let user of ranking) {
-            if (newRanking.length === RANK_TOP) break;
-            if (user.score <= score) {
-                newRanking.push({ 'user': currentUser, 'score': score })
-            } else {
-                newRanking.push(user);
+        if (ranking.length === 0) {
+            newRanking.push({ 'user': currentUser, 'score': score });
+        } else {
+            let i = 0;
+            let added = false;
+            while (true) {
+                if (newRanking.length === RANK_TOP) break;
+                if (i === ranking.length) {
+                    if (!added) newRanking.push({ 'user': currentUser, 'score': score });
+                    break;
+                }
+                let user = ranking[i];
+                if ((!added) && (user.score <= score)) {
+                    newRanking.push({ 'user': currentUser, 'score': score });
+                    added = true;
+                } else {
+                    newRanking.push(user);
+                    i++;
+                }
             }
         }
         ranking = newRanking;
