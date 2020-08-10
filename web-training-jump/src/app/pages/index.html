@@ -10,8 +10,8 @@
 
 <body>
     <main class="flex-container-col-A">
-        <h1>Whack-a-mole! <span class="score">0</span></h1>
-        <div class="game">
+        <h1 class="text-A">Whack-a-mole! <span class="score">0</span></h1>
+        <div class="game flex-container-row-B">
             <div class="hole hole1">
                 <div class="mole"></div>
             </div>
@@ -30,8 +30,17 @@
             <div class="hole hole6">
                 <div class="mole"></div>
             </div>
+            <div class="hole hole7">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole8">
+                <div class="mole"></div>
+            </div>
+            <div class="hole hole9">
+                <div class="mole"></div>
+            </div>
         </div>
-        <button onClick="game.startGame()">WHACK!</button>
+        <button class="text-A" onClick="game.startGame()">WHACK!</button>
     </main>
 
     <audio src="./assets/sounds/hihat.wav"></audio>

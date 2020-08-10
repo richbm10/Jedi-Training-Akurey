@@ -11,10 +11,15 @@ html {
 }
 
 h1 {
-    font-size: 10rem;
     font-family: 'Amatic SC', cursive;
 }
 
-button {
-    font-size: x-large;
+.text-A {
+    font-size: 2rem;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .text-A {
+        font-size: 3rem;
+    }
 }

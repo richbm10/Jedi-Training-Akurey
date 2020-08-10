@@ -47,10 +47,9 @@ function Game() {
 
     this.bonk = e => {
         if (!e.isTrusted) return;
+        console.log(score);
         score++;
         e.target.classList.remove('up');
         scoreBoard.textContent = score;
     }
 }
-
-
