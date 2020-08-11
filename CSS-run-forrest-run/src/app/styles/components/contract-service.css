@@ -1,0 +1,132 @@
+/*
+    This stylesheet defines the style of each contract-service component on the page, and
+    the styles of the container of those contract-services.
+
+    #cs-canvas:
+        - Container of the contract services components.
+        - Dimensions: width: 100% - height: auto. This dimensions set a container that covers
+        a 100% of the main width.
+    
+    .cs-canvas__contract-service:
+        - Each contract service is defined as a grid, because the amount of rows and columns are known.
+        Then, grid helps to define a responsive placement of the different elements of the component.
+        
+*/
+
+.cs-canvas__contract-service {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 4vh 20vh 4vh;
+    justify-items: stretch;
+    align-items: stretch;
+    margin: 1%;
+}
+
+#cs-canvas {
+    width: 100%;
+    padding: 1% 0;
+}
+
+.cs-canvas__contract-service h2 {
+    font-size: 0.75rem;
+    grid-area: 1/1/2/3;
+}
+
+.cs-canvas__contract-service h2::after {
+    content: '';
+    margin-top: 1.5%;
+    width: 100%;
+    height: 1px;
+    display: block;
+}
+
+.cs-canvas__contract-service p {
+    font-size: 0.60rem;
+    grid-area: 2/2/3/3;
+    margin-left: 5%;
+    line-height: 0.60rem;
+    overflow: auto;
+    text-align: justify;
+}
+
+.cs-canvas__contract-service img {
+    grid-area: 2/1/3/2;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    object-position: 0;
+}
+
+.cs-canvas__contract-service .button {
+    grid-area: 3/2/4/3;
+    justify-self: center;
+    align-self: center;
+    place-self: center stretch;
+    height: 80%;
+}
+
+.cs-canvas__contract-service span {
+    grid-area: 3/1/4/2;
+    align-self: center;
+}
+
+.cs-canvas__contract-service .button,
+.cs-canvas__contract-service span {
+    font-size: 0.70rem;
+}
+
+@media only screen and (min-width: 360px) {
+    .cs-canvas__contract-service p {
+        font-size: 0.70rem;
+        line-height: 0.75rem;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+    .cs-canvas__contract-service h2 {
+        font-size: 1.20rem;
+    }
+    .cs-canvas__contract-service .button,
+    .cs-canvas__contract-service span {
+        font-size: 1.15rem;
+    }
+    .cs-canvas__contract-service p {
+        font-size: 1.00rem;
+        line-height: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .cs-canvas__contract-service {
+        grid-template-columns: fit-content(175px) fit-content(175px);
+    }
+    .cs-canvas__contract-service h2::after {
+        margin-top: 3%;
+    }
+    #cs-canvas__contract-service-canvas {
+        max-width: 1280px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cs-canvas__contract-service {
+        grid-template-rows: 2vh 10vh 2vh;
+    }
+    .cs-canvas__contract-service h2 {
+        font-size: 0.75rem;
+    }
+    .cs-canvas__contract-service h2::after {
+        margin-top: 1%;
+    }
+    .cs-canvas__contract-service .button,
+    .cs-canvas__contract-service span {
+        font-size: 0.70rem;
+    }
+    .cs-canvas__contract-service p {
+        font-size: 0.55rem;
+        line-height: 0.75rem;
+    }
+    #cs-canvas {
+        flex-flow: row wrap;
+    }
+}

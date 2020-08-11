@@ -1,0 +1,12 @@
+/*
+    This stylesheet defines the styles of a button component, so it can be imported
+    and used on different pages, for using a consistent design of button.
+*/
+
+.button {
+    border-radius: 3vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
