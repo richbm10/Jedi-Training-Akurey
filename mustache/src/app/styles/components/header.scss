@@ -1,0 +1,44 @@
+/*
+    header:
+        - Dimensions: width: 100vw - height: 10vh. 
+        - It is a flexbox row container.
+*/
+
+header {
+    position: fixed;
+    height: 10vh;
+    z-index: 1;
+    width: 100vw;
+    color: $first-color;
+    background-color: $second-color;
+    #header__menu-button {
+        font-size: 2rem;
+        margin-right: 5%;
+    }
+    #header__logo {
+        height: 8vh;
+        width: auto;
+        object-fit: contain;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+    header {
+        height: 8vh;
+        #header__menu-button {
+            font-size: 3rem;
+        }
+        #header__logo {
+            height: 6vh;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1024px) {
+    header {
+        #header__menu-button {
+            display: none;
+        }
+    }
+}
