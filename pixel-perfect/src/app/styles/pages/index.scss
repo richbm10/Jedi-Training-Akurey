@@ -1,0 +1,34 @@
+/*
+    #content:
+        - The page content is a flexbox container that wraps the main and footer layouts. Flexbox
+        was choosen instead of grid because it has a higher compatibility over different browsers.
+*/
+
+@import '../resets.scss';
+@import '../globals/global.scss';
+@import '../theme/theme-color.scss';
+@import '../theme/theme-font.scss';
+@import '../components/header.scss';
+@import '../components/nav-bar.scss';
+@import '../components/button.scss';
+@import '../components/hero-section.scss';
+@import '../components/contract-service.scss';
+@import '../components/footer.scss';
+#content {
+    overflow: hidden;
+    position: relative;
+    top: 10vh;
+    main {
+        overflow: inherit;
+        width: 90vw;
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+    #content {
+        top: 8vh;
+        main {
+            width: 95vw;
+        }
+    }
+}

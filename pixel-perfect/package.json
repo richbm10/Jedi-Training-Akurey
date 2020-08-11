@@ -1,0 +1,34 @@
+{
+    "name": "pixel-perfect",
+    "version": "1.0.0",
+    "description": "Pixel Perfect of Agency Directory Design",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/richbm10/Jedi-Training-Akurey.git"
+    },
+    "keywords": [
+        "Pixel-Perfect",
+        "Web-Design"
+    ],
+    "author": "Ricardo Bonilla Morales",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/richbm10/Jedi-Training-Akurey/issues"
+    },
+    "homepage": "https://github.com/richbm10/Jedi-Training-Akurey#readme",
+    "devDependencies": {
+        "autoprefixer": "^9.8.6",
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-uglifycss": "^1.1.0"
+    },
+    "dependencies": {},
+    "browserslist": [
+        "> 1%"
+    ]
+}

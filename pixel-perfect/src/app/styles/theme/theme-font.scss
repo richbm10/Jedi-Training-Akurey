@@ -1,0 +1,59 @@
+/*
+    Global font of the application. Defines a font-size on the html dom root, for then using
+    relative rem units. This helps to centralize the font-sizes of the application, and change
+    all of them by only changing the root font-size.
+
+    There are 4 font classes relative to the dom root font-size. So they are used along the application
+    for a consistent typography over the application.
+*/
+
+html {
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.hero-header {
+    font-size: 1.5rem;
+}
+
+.text-A {
+    font-size: 1rem;
+}
+
+.text-B {
+    font-size: 0.75rem;
+}
+
+.text-C {
+    font-size: 0.65rem;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .hero-header {
+        font-size: 2.5rem;
+    }
+    .text-A {
+        font-size: 1.4rem;
+    }
+    .text-B {
+        font-size: 1rem;
+    }
+    .text-C {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) {
+    .text-A {
+        font-size: 1.2rem;
+    }
+    .text-B {
+        font-size: 0.95rem;
+    }
+    .text-C {
+        font-size: 0.85rem;
+    }
+}
+
+// @media only screen and (min-device-width: 1200px) {
+// }
