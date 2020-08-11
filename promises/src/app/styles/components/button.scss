@@ -1,0 +1,20 @@
+/*
+    This stylesheet defines the styles of a button component, so it can be imported
+    and used on different pages, for using a consistent design of button.
+*/
+
+.button {
+    border-radius: 3vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $first-color;
+    background-color: $second-color;
+    border: 1px solid $second-color;
+}
+
+.button:hover {
+    background-color: $third-color;
+    border: 1px solid $third-color;
+}
